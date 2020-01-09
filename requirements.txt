@@ -146,7 +146,7 @@ requests==2.22.0
 requests-unixsocket==0.1.5
 resampy==0.2.2
 roman==2.0.0
-rope==0.10.5
+rope==0.11.0
 scikit-image==0.16.2
 scikit-learn==0.21.3
 scikit-neuralnetwork==0.7
