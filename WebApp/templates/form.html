@@ -1,0 +1,239 @@
+{% load static %}
+{% static 'images' as baseURL %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SEG USER FORM</title>
+<link rel="shortcut icon" type="image/x-icon" href="{% static 'favicon.png' %}" />
+<link href="{% static 'css/master.css' %}" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'plugins/iview/css/iview.css' %}" type='text/css' media='all' />
+<link rel="stylesheet" href="{% static 'plugins/iview/css/skin/style.css' %}" type='text/css' media='all' />
+
+<script type="text/javascript" src="{% static 'js/jquery-1.11.1.min.js' %}"></script>
+<script src= "{% static 'js/jquery-migrate-1.2.1.js' %}" ></script>
+<script src="{% static 'js/jquery-ui.min.js' %}"></script>
+<script src="{% static 'js/bootstrap-3.1.1.min.js' %}"></script>
+<script src="{% static 'js/modernizr.custom.js' %}"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<div class="layout-theme animated-css"  data-header="sticky" data-header-top="200"  >
+
+
+ 
+  <!-- HEADER -->
+  <div class="header">
+    <div >
+      <div>
+        <div class="row">
+        
+          <div class="col-md-8 col-xs-12" style="display: none;">
+            <div class="header-block">
+              <span class="header-label">
+                <i class="icon-header icon-call-in color_primary"></i>
+                <span class="helper"> Call Us <a href="tel:+918587093204"><strong>+91 8587093204</strong></a></span>
+              </span>
+
+              <span class="header-label">
+                <i class="icon-header icon-envelope-open color_primary"></i>
+                <span class="helper"> Email us <a
+                    href="mailto: mailmevjha@gmail.com"><strong>SmartEEG.care@gmail.com</strong></a></span>
+              </span>
+
+            </div>
+            <form class="hidden-md hidden-lg text-center" id="search-global-mobile" method="get">
+              <input type="text" value="" id="search-mobile" name="s">
+              <button type="submit"><i class="icon fa fa-search"></i></button>
+            </form>
+          </div>
+        </div>
+      </div><!-- end header-inner-->
+    </div><!-- end container-->
+
+    <div class="top-nav ">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12  col-xs-12">
+            <div class="navbar yamm ">
+              <div class="navbar-header hidden-md  hidden-lg  hidden-sm ">
+                <button type="button" data-toggle="collapse" data-target="#navbar-collapse-1"
+                  class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span
+                    class="icon-bar"></span></button>
+                <a href="#" class="navbar-brand">Menu</a> </div>
+              <div id="navbar-collapse-1" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                  <li><a>Smart Encephalo<span style="color: orangered;">Graphy</span></a></li>
+                  <li><a href="">HOME </a> </li>
+                  <li><a href="">CONTACT </a> </li>
+                </ul>
+                <form id="search-global-menu" class="hidden-xs hidden-sm" method="get">
+                  <input type="text" value="" id="search" name="s">
+                  <button type="submit"><i class="icon-magnifier"></i></button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end top-nav -->
+  </div><!-- HEADER END -->
+
+
+  <div class="ui-title-page bg_title bg_transparent">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1>Smart EncephaloGraphy</h1>
+          <div class="ui-subtitle-page">Your health comes first!</div>
+        </div>
+      </div>
+    </div>
+  </div><!-- end ui-title-page -->
+
+
+  <div class="border_btm">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <ol class="breadcrumb">
+            <li><a href="javascript:void(0);"><i class="icon icon-home color_primary"></i></a></li>
+            <li class="active">EEG Data</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div><!-- end breadcrumb -->
+
+
+  <main class="main-content">
+    <section class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <img src="https://www.stevenson.edu/sebin/j/l/custom-Custom_Size___AI%20Healthcare.jpg" height="300" width="1170" alt="Foto">
+            <div style="font-weight: 20000;" class="ui-subtitle-block ui-subtitle-block_form"><b>Want to know whether you are suffering from brain disorders such as Bipolar disorders?
+              Just Register yourself by filling this form and upload the data of the alpha waves recieved through receptors.(for development purpose use test-test.cvs file). And there you go! 
+              Please fill-in the form below to see how AI helps to detect whether you have Bipolar Disorder</b></div>
+            <div style="font-weight: 20000;" class="ui-subtitle-block ui-subtitle-block_form"><b>USER <span style="color: orangered;">FORM</span></b></div>
+            <i class="decor-brand"></i>
+          </div>
+        </div><!-- end row -->
+
+        <form style="background-color: palegoldenrod; padding-top: 50px;" class="form-appointment ui-form" action="/dash">
+          {% csrf_token %}
+          <div class="row">
+            <div class="col-md-5 col-md-offset-1">
+              <div class="input-group">
+                <input type="text" style="font-weight: 1000;" name="fname" placeholder="First Name">
+              </div>
+              <div class="input-group">
+                <input type="email" style="font-weight: 1000;" name="email" placeholder="Email Address">
+              </div>
+              <div class="input-group">
+                <input class="datetimepicker" type="text" name="dob" style="font-weight: 1000;" placeholder="Date Of Birth">
+                <i class="icon icon-calendar"></i>
+              </div>
+              <div class="input-group">
+                <input type="text" style="font-weight: 1000;" name="gender" placeholder="Gender">
+              </div>
+            </div>
+            <div class="col-md-5">
+              <div class="input-group">
+                <input style="font-weight: 1000;" type="text" name="lname" placeholder="Last Name">
+              </div>
+              <div class="input-group">
+                <input type="text" style="font-weight: 1000;" name="phone" placeholder="Phone #">
+              </div>
+              <div class="input-group">
+                <input type="text" style="font-weight: 1000;" name="age" placeholder="Age">
+              </div>
+              <button class="btn bg-color_primary">SUBMIT</button>
+            </div>
+          </div><!-- end row -->
+        </form s><!-- end form-appointment -->
+
+      </div><!-- end container -->
+    </section><!-- end section -->
+
+
+  </main><!-- end main-content -->
+ 
+  <footer class="footer" id="contact">
+    <div class="footer__inner">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-sm-4">
+            <section class="footer__section">
+              <h2 class="footer__title">About Smart EncephaloGraphy</h2>
+              <i class="decor-brand decor-brand_footer"></i>
+              <p>A health care startup which aims in making the world disease free. We use machine learning algorithm to help people detect brain related disorders.</p>
+              <div class="separator_10"></div>
+              <address class="footer__contacts"><i class="footer__icon icon-pointer color_primary"></i>Netaji Subhas University of Technology, Delhi</address>
+              <p class="footer__contacts"><i class="footer__icon icon-call-in color_primary"></i>+91 8587093204</p>
+              <a href="javascript:void(0);" class="footer__contacts"><i
+                  class="footer__icon icon-envelope-open color_primary"></i>SmartEEG.care@gmail.com</a>
+              
+            </section>
+          </div>
+
+
+          <div class="col-sm-4">
+            
+            <section class="footer__section">
+              <h2 class="footer__title">Helpful Links</h2>
+              <i class="decor-brand decor-brand_footer"></i>
+              <ul>
+                <li>How to avoid diseases</li>
+                <li>Become healthy in 5 steps</li>
+                <li>Fruits Juices for a Day</li>
+              </ul>
+            </section>
+          </div>
+
+          <section class="footer__section col-sm-4">
+            <h2 class="footer__title">Contact Form</h2>
+            <i class="decor-brand decor-brand_footer"></i>
+            <form class="form" role="form">
+              <div class="form-group">
+                <input class="form-control" type="text" placeholder="Full Name">
+                <input class="form-control" type="email" placeholder="Email address">
+                <textarea class="form-control" rows="4" placeholder="Message"></textarea>
+                <input class="btn bg-color_primary pull-right" type="submit" value="SEND NOW">
+              </div>
+            </form>
+          </section>
+        </div><!-- end row -->
+      </div><!-- end container -->
+    </div><!-- end footer__inner -->
+  </footer>
+
+
+</div><!-- end layout-theme -->
+
+<span class="scroll-top bg-color_second"> <i class="fa fa-angle-up"> </i></span>
+
+
+<!-- SCRIPTS -->
+<script type="text/javascript" src="{% static 'plugins/isotope/jquery.isotope.min.js' %}"></script>
+<script src="{% static 'js/waypoints.min.js' %}"></script>
+<script src="{% static 'plugins/bxslider/jquery.bxslider.min.js' %}"></script>
+<script src="{% static 'plugins/prettyphoto/js/jquery.prettyPhoto.js' %}"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="{% static 'plugins/datetimepicker/jquery.datetimepicker.js' %}"></script>
+<script src="{% static 'plugins/jelect/jquery.jelect.js' %}"></script>
+<script src="{% static 'plugins/nouislider/jquery.nouislider.all.min.js' %}"></script>
+
+
+<!--THEME-->
+<script src="{% static 'js/cssua.min.js' %}"></script>
+<script src="{% static 'js/wow.min.js' %}"></script>
+<script src="{% static 'js/custom.js' %}"></script>
+</body>
+</html>

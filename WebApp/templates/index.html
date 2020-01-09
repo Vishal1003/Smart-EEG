@@ -1,0 +1,376 @@
+{% load static %}
+{% static 'images' as baseURL %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HEALTHCARE Agency</title>
+  <link rel="shortcut icon" type="image/x-icon" href="{% static 'favicon.png' %}" />
+  <link href="{% static 'css/master.css' %}" rel="stylesheet ">
+  <link rel="stylesheet" href="{% static 'plugins/iview/css/iview.css' %} " type='text/css' media='all' />
+  <link rel="stylesheet" href="{% static 'plugins/iview/css/skin/style.css' %} " type='text/css' media='all' />
+  <script type="text/javascript" src="{% static 'js/jquery-1.11.1.min.js' %} "></script>
+  <script src="{% static 'js/jquery-migrate-1.2.1.js' %} "></script>
+  <script src="{% static 'js/jquery-ui.min.js' %} "></script>
+  <script src="{% static 'js/bootstrap-3.1.1.min.js' %} "></script>
+  <script src="{% static 'js/modernizr.custom.js' %} "></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="layout-theme animated-css" data-header="sticky" data-header-top="200">
+
+
+    <!-- HEADER -->
+    <div class="header">
+      <div >
+        <div >
+          <div class="row">
+
+            <div class="col-md-8 col-xs-12" style="display: none;">
+              <div class="header-block" >
+
+                <span class="header-label header-label_2 bg-color_second color_white">
+                  <a href="/register" class="color_white" href="javascript:void(0);"><i
+                      class="icon-header icon-book-open"></i><span class="helper">Register/Login</span></a></span>
+              </div>
+              <form class="hidden-md hidden-lg text-center" id="search-global-mobile" method="get">
+                <input type="text" value="" id="search-mobile" name="s">
+                <button type="submit"><i class="icon fa fa-search"></i></button>
+              </form>
+            </div>
+          </div>
+        </div><!-- end header-inner-->
+      </div><!-- end container-->
+
+      <div class="top-nav ">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12  col-xs-12">
+              <div class="navbar yamm ">
+                <div class="navbar-header hidden-md  hidden-lg  hidden-sm ">
+                  <button type="button" data-toggle="collapse" data-target="#navbar-collapse-1"
+                    class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span
+                      class="icon-bar"></span></button>
+                  <a href="#" class="navbar-brand">Menu</a> </div>
+                <div id="navbar-collapse-1" class="navbar-collapse collapse">
+                  <ul class="nav navbar-nav">
+                    <li><a href="#">HOME </a> </li>
+                    <li><a href=""></a> </li>
+                    <li><a href="/register">EEG FORM </a> </li>
+                    <li><a href="#contact">CONTACT </a> </li>
+                  </ul>
+                  <form id="search-global-menu" class="hidden-xs hidden-sm" method="get">
+                    <input type="text" value="" id="search" name="s">
+                    <button type="submit"><i class="icon-magnifier"></i></button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--end top-nav -->
+    </div><!-- HEADER END -->
+
+
+
+    <section class="advantages wow fadeInUp" data-wow-delay="1.5s" style="background-color: palegoldenrod;">
+      <div class="container">
+        <div class="row">
+          <div class="separator_20"></div>
+          <div class="col-xs-12">
+            <h1 class="ui-title-block">Welcome to <strong class="font-weight_600">Smart Encephalo</strong><span
+                class="font-weight-norm color_primary">Graphy</span></h1>
+            <div class="ui-subtitle-block">A place where HealthCare meets AI!. <p>Our Team care about you & your
+                family’s health</p>
+            </div>
+          </div>
+          <section class="advantages__inner col-md-4">
+            <i class="icon flaticon-medical51 color_second"></i>
+            <h2 class="ui-title-inner">HealthCare and Tech Professionals</h2>
+            <i class="decor-brand"></i>
+            <p class="ui-text text-center">We have a team of best doctors and data scientist to help the society.</p>
+            <a class="btn btn_small" href="javascript:void(0);">LEARN MORE</a>
+          </section>
+          <section class="advantages__inner col-md-4">
+            <i class="icon flaticon-medical109 color_second"></i>
+            <h2 class="ui-title-inner">Medical Excellence</h2>
+            <i class="decor-brand"></i>
+            <p class="ui-text text-center">Our Machine Learning Algorithm gives upto 97% of accurate results which is
+              very helpful in disease detection</p>
+            <a class="btn btn_small" href="javascript:void(0);">LEARN MORE</a>
+          </section>
+          <section class="advantages__inner col-md-4">
+            <i class="icon flaticon-healthcare6 color_second"></i>
+            <h2 class="ui-title-inner">Latest Technologies</h2>
+            <i class="decor-brand"></i>
+            <p class="ui-text text-center">We continously work on latest technologies and research papers to keep
+              updating our technologies.</p>
+            <a class="btn btn_small" href="javascript:void(0);">LEARN MORE</a>
+          </section>
+        </div><!-- end row -->
+      </div><!-- end container -->
+    </section><!-- end advantages -->
+
+
+    <div class="block-hourse block-hourse_full bg bg_1 bg_transparent wow zoomIn" data-wow-delay="1s">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="block-hourse__inner block-hourse__inner_first">
+              <p class="block-hourse__text"><i class="icon icon-note"></i>Check whether you have a Bipolar disorder or
+                not!</p>
+              <p class="block-hourse__title">JUST REGISTER HERE</p>
+              <a class="btn bg-color_primary" href="/register">REGISTER</a>
+            </div>
+          </div>
+          <section class="col-md-6">
+            <div class="block-hourse__inner block-hourse__inner_second">
+              <div class="block-hourse__title-table"><i class="icon icon-clock"></i>What are Bipolar Disorders?</div>
+              <td>
+                Bipolar disorder, formerly called manic depression, is a mental health condition that causes extreme
+                mood swings that include emotional highs (mania or hypomania) and lows (depression).
+
+                When you become depressed, you may feel sad or hopeless and lose interest or pleasure in most
+                activities. When your mood shifts to mania or hypomania (less extreme than mania), you may feel
+                euphoric, full of energy or unusually irritable. These mood swings can affect sleep, energy, activity,
+                judgment, behavior and the ability to think clearly.
+              </td>
+            </div>
+          </section>
+        </div><!-- end row -->
+      </div><!-- end container -->
+    </div><!-- end block-hourse -->
+
+
+
+    <section class="section bg bg_2 bg_transparent text-center">
+
+      <div class="icon-tabs-wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <h2 class="ui-title-block color_white">Why <strong>Choose Us</strong></h2>
+              <div class="ui-subtitle-block no-spacing">You have a number of reasons to choose us!</div>
+            </div>
+            <div class="icon-tabs">
+              <div class="col-md-6 wow bounceInLeft">
+                <ul class="list-icons ">
+                  <li class="active ">
+                    <a href="#icontab1" aria-controls="icontab1" role="tab" data-toggle="tab"><span
+                        class="icon-round bg-color_second helper "><i class="icon fa fa-ambulance"></i></span></a></li>
+                  <li> <a href="#icontab2" aria-controls="icontab2" role="tab" data-toggle="tab"><span
+                        class="icon-round bg-color_second helper"><i class="icon fa fa-heartbeat"></i></span></a></li>
+                  <li> <a href="#icontab3" aria-controls="icontab3" role="tab" data-toggle="tab"><span
+                        class="icon-round bg-color_second helper"><i class="icon fa fa-hospital-o"></i></span></a></li>
+                  <li> <a href="#icontab4" aria-controls="icontab4" role="tab" data-toggle="tab"><span
+                        class="icon-round bg-color_second helper"><i class="icon fa fa-user-md"></i></span></a></li>
+                </ul>
+
+              </div>
+              <div class="col-md-6 text-right wow bounceInRight">
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div role="tabpanel" class="tab-pane active" id="icontab1"><img
+                      src="{% static 'media/530x270/1.jpg' %}" height="270" width="530" alt="Foto">
+
+                    <div class="tab-info">
+
+                      <p class="title-small">COMMITMENT – We fulfill our promises!</p>
+                      <p class="ui-text text-center color_light-grey">We help people to detect as well as cure many
+                        brain related diseases which are rarely detectd by normal methods and are dangerous for our
+                        health.</p>
+
+                    </div>
+
+                  </div>
+                  <div role="tabpanel" class="tab-pane" id="icontab2"><img src="{% static 'media/530x270/2.jpg' %}"
+                      alt="Foto">
+
+                    <div class="tab-info">
+
+                      <p class="title-small">Health is Wealth</p>
+                      <p class="ui-text text-center color_light-grey">We totally abide to this rule and we beleive that
+                        your health is treasure which needs to be in safe hands.</p>
+
+                    </div>
+
+                  </div>
+                  <div role="tabpanel" class="tab-pane" id="icontab3"><img src="{% static 'media/530x270/3.jpg' %}"
+                      alt="Foto">
+
+
+                    <div class="tab-info">
+
+                      <p class="title-small">No Age LIMIT!</p>
+                      <p class="ui-text text-center color_light-grey">Our algorithms can detect the diseases of any
+                        person with and age group</p>
+
+                    </div>
+
+
+                  </div>
+                  <div role="tabpanel" class="tab-pane" id="icontab4"><img src="{% static 'media/530x270/4.jpg' %}"
+                      alt="Foto">
+
+                    <div class="tab-info">
+
+                      <p class="title-small">24*7 Support!</p>
+
+
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end row -->
+        </div>
+      </div>
+
+    </section><!-- end bl_2-col_with-fig -->
+
+
+
+
+    <section class="section-large">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <h2 class="ui-title-block text-center">Services <strong>We offer</strong></h2>
+            <div class="ui-subtitle-block text-center">24x7 Support</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="list-services">
+            <div class="col-md-4 list-services__item wow bounceInRight" data-wow-delay="1s">
+              <span class="icon-round bg-color_second helper"><i class="icon flaticon-eye64"></i></span>
+              <div class="list-services__inner border_btm">
+                <h3 class="list-services__title">Brain Care Solutions</h3>
+
+              </div>
+            </div>
+            <div class="col-md-4 list-services__item wow bounceInRight" data-wow-delay="1.5s">
+              <span class="icon-round bg-color_second helper"><i class="icon flaticon-pharmacy5"></i></span>
+              <div class="list-services__inner border_btm">
+                <h3 class="list-services__title">General Prescriptions</h3>
+
+              </div>
+            </div>
+            <div class="col-md-4 list-services__item wow bounceInRight" data-wow-delay="2s">
+              <span class="icon-round bg-color_second helper"><i class="icon flaticon-pipette2"></i></span>
+              <div class="list-services__inner border_btm">
+                <h3 class="list-services__title">Blood Tests & X-Rays</h3>
+
+              </div>
+            </div>
+            <div class="col-md-4 list-services__item wow bounceInRight" data-wow-delay="2.5s">
+              <span class="icon-round bg-color_second helper"><i class="icon flaticon-scalpel3"></i></span>
+              <div class="list-services__inner border_btm">
+                <h3 class="list-services__title">Health Care Solutions</h3>
+
+              </div>
+            </div>
+            <div class="col-md-4 list-services__item wow bounceInRight" data-wow-delay="3s">
+              <span class="icon-round bg-color_second helper"><i class="icon flaticon-syrup1"></i></span>
+              <div class="list-services__inner border_btm">
+                <h3 class="list-services__title">Medicines & Drug Store</h3>
+
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+    </section><!-- end section -->
+
+  
+
+    <footer class="footer" id="contact">
+      <div class="footer__inner">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-sm-4">
+              <section class="footer__section">
+                <h2 class="footer__title">About Smart EncephaloGraphy</h2>
+                <i class="decor-brand decor-brand_footer"></i>
+                <p>A health care startup which aims in making the world disease free. We use machine learning algorithm
+                  to help people detect brain related disorders.</p>
+                <div class="separator_10"></div>
+                <address class="footer__contacts"><i class="footer__icon icon-pointer color_primary"></i>Netaji Subhas
+                  University of Technology, Delhi</address>
+                <p class="footer__contacts"><i class="footer__icon icon-call-in color_primary"></i>+91 8587093204</p>
+                <a href="javascript:void(0);" class="footer__contacts"><i
+                    class="footer__icon icon-envelope-open color_primary"></i>SmartEEG.care@gmail.com</a>
+
+              </section>
+            </div>
+
+
+            <div class="col-sm-4">
+
+              <section class="footer__section">
+                <h2 class="footer__title">Helpful Links</h2>
+                <i class="decor-brand decor-brand_footer"></i>
+                <ul>
+                  <li>How to avoid diseases</li>
+                  <li>Become healthy in 5 steps</li>
+                  <li>Fruits Juices for a Day</li>
+                </ul>
+              </section>
+            </div>
+
+            <section class="footer__section col-sm-4">
+              <h2 class="footer__title">Contact Form</h2>
+              <i class="decor-brand decor-brand_footer"></i>
+              <form class="form" role="form">
+                <div class="form-group">
+                  <input class="form-control" type="text" placeholder="Full Name">
+                  <input class="form-control" type="email" placeholder="Email address">
+                  <textarea class="form-control" rows="4" placeholder="Message"></textarea>
+                  <input class="btn bg-color_primary pull-right" type="submit" value="SEND NOW">
+                </div>
+              </form>
+            </section>
+          </div><!-- end row -->
+        </div><!-- end container -->
+      </div><!-- end footer__inner -->
+    </footer>
+
+  </div><!-- end layout-theme -->
+
+  <span class="scroll-top bg-color_second"> <i class="fa fa-angle-up"> </i></span>
+
+  <!--HOME SLIDER-->
+  <script src="{% static 'plugins/iview/js/iview.js' %}"></script>
+  <script src="{% static 'plugins/rendro-easy-pie-chart/dist/jquery.easypiechart.min.js' %}"></script>
+  <!-- SCRIPTS -->
+  <script type="text/javascript" src="{% static 'plugins/isotope/jquery.isotope.min.js' %}"></script>
+  <script src="{% static 'js/waypoints.min.js' %}"></script>
+  <script src="{% static 'plugins/bxslider/jquery.bxslider.min.js' %}"></script>
+  <script src="{% static 'plugins/prettyphoto/js/jquery.prettyPhoto.js' %}"></script>
+  <script src="{% static 'http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js' %}"></script>
+  <script src="{% static 'plugins/datetimepicker/jquery.datetimepicker.js' %}"></script>
+  <script src="{% static 'plugins/jelect/jquery.jelect.js' %}"></script>
+  <script src="{% static 'plugins/nouislider/jquery.nouislider.all.min.js' %}"></script>
+
+  <!-- Loader -->
+  <script src="{% static 'plugins/loader/js/classie.js' %}"></script>
+  <script src="{% static 'plugins/loader/js/pathLoader.js' %}"></script>
+  <script src="{% static 'plugins/loader/js/main.js' %}"></script>
+  <script src="{% static 'js/classie.js' %}"></script>
+  <!--THEME-->
+  <script src="{% static 'js/cssua.min.js' %}"></script>
+  <script src="{% static 'js/wow.min.js' %}"></script>
+  <script src="{% static 'js/custom.js' %}"></script>
+</body>
+
+</html>

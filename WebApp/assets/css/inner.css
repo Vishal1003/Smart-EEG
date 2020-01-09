@@ -1,0 +1,192 @@
+/* ---------------------
+
+1. Services page
+2. Departments page
+3. Services details page
+------------------------*/
+
+
+/* --- Services --- */
+
+.services {
+	margin-top: 60px;
+}
+.services__item {
+	position: relative;
+	margin-bottom: 70px;
+}
+.services__item .ui-title-inner {
+	margin-top: 47px;
+}
+.services__item:hover .ui-title-inner {
+	color: #f26529;
+}
+.service__figure {
+	position: relative;
+}
+
+
+.hover__figure{
+		overflow:hidden;
+		position:relative
+		
+}
+
+.hover__figure:after {
+	background: rgba(255, 255, 255, 0.4);
+	content: "";
+	height: 100%;
+	left: -150%;
+	position: absolute;
+	top: 0;
+	transition: none 0s ease 0s;
+	width: 100%;
+	transform: rotate(0deg) scale(1.003) skew(14deg) translate(0px);
+	-webkit-transform: rotate(360deg) scale(1.003) skew(14deg) translate(0px);
+	-moz-transform: rotate(0deg) scale(1.003) skew(14deg) translate(0px);
+	-o-transform: rotate(0deg) scale(1.003) skew(14deg) translate(0px);
+	-ms-transform: rotate(0deg) scale(1.003) skew(14deg) translate(0px);
+	-webkit-transition: all .3s ease-out;
+	-moz-transition: all .3s ease-out;
+	-ms-transition: all .3s ease-out;
+	-o-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+}
+
+.hover__figure:hover:after {
+	left: -50%;
+}
+
+.hover__figure img{
+		-webkit-transition: all .3s ease-out;
+	-moz-transition: all .3s ease-out;
+	-ms-transition: all .3s ease-out;
+	-o-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+}
+.hover__figure:hover img {
+    transform: scale(1.1);
+}
+
+
+.services__item .icon-round {
+	position: absolute;
+	right: 20px;
+	bottom: -32px;
+	display: inline-block;
+	box-shadow: 0 0 0 3px #fff;
+}
+.services__item:hover .icon-round {
+	background-color: #f26529;
+}
+.services__item:hover .btn {
+	color: #fff;
+	background-color: #f26529;
+}
+.services .decor-brand {
+	margin-top: 0;
+	margin-bottom: 60px;
+}
+
+/* --- Departments --- */
+
+.departments {
+	margin-top: 60px;
+	margin-bottom: 33px;
+}
+.departments-item {
+	display: inline-block;
+	width: 370px;
+	margin-bottom: 85px;
+	margin-left: 26px;
+	padding: 40px 30px 0;
+	vertical-align: top;
+	border: 1px solid #eee;
+	background-color: #fff;
+	transition: all 0.3s;
+}
+.departments-item:nth-child(3n+1) {
+	margin-left: 0;
+}
+.departments-item:hover {
+	background-color: #f2f7f9;
+}
+.departments-item .btn {
+	margin-top: 40px;
+	margin-bottom: -20px;
+	border: 1px solid #eee;
+	background-color: #fff;
+}
+.departments-item .ui-title-inner {
+	margin-top: 40px;
+	margin-bottom: 20px;
+	transition: all 0.3s;
+}
+.departments-item .icon-round {
+	box-shadow: 0 0 0 3px #eee;
+}
+.departments-item .icon-round .icon {
+	font-size: 35px;
+}
+.departments-item:hover .icon-round {
+	background-color: #f26529;
+	box-shadow: 0 0 0 3px #fff;
+}
+.departments-item:hover .btn {
+	color: #fff;
+	background-color: #f26529;
+}
+.departments-item:hover .ui-title-inner {
+	color: #f26529;
+}
+.departments .decor-brand {
+	margin-top: 0;
+	margin-bottom: 80px;
+}
+
+
+/* --- Services-details --- */
+
+.services-details {
+	margin-top: 65px;
+	margin-bottom: 100px;
+}
+.services-details__foto {
+	position: relative;
+	margin-bottom: 70px;
+}
+.services-details__foto .icon-round {
+	position: absolute;
+	bottom: -40px;
+	left: 50%;
+	margin-left: -40px;
+	box-shadow: 0 0 0 5px #fff;
+}
+.services-details .ui-text {
+	margin-bottom: 30px;
+}
+.services-details .decor-brand {
+	margin-top: 49px;
+	margin-bottom: 36px;
+}
+.services-details .ui-subtitle-block {
+	margin-top: 15px;
+	padding-bottom: 0;
+}
+.services-details .ui-title-inner {
+	margin-top: 44px;
+	margin-bottom: 30px;
+}
+.services-details .list-mark {
+	margin-bottom: 30px;
+}
+.services-details .sidebar {
+	padding-left: 20px;
+}
+.services-details .sidebar .decor-brand {
+	margin-top: -10px;
+	margin-bottom: 30px;
+}
+.services-details .table-hours tr td {
+	padding-bottom: 8px;
+}

@@ -1,0 +1,349 @@
+{% load static %}
+{% static 'images' as baseURL %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SEG User Data</title>
+  <link rel="shortcut icon" type="image/x-icon" href="{% static 'favicon.png' %}" />
+  <link href="{% static 'css/master.css' %}" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'plugins/iview/css/iview.css' %}" type='text/css' media='all' />
+  <link rel="stylesheet" href="{% static 'plugins/iview/css/skin/style.css' %}" type='text/css' media='all' />
+
+  <script type="text/javascript" src="{% static 'js/jquery-1.11.1.min.js' %}"></script>
+  <script src="{% static 'js/jquery-migrate-1.2.1.js' %}"></script>
+  <script src="{% static 'js/jquery-ui.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap-3.1.1.min.js' %}"></script>
+  <script src="{% static 'js/modernizr.custom.js' %}"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    .main-raised {
+      margin: -60px 30px 0;
+      border-radius: 6px;
+      box-shadow: 0 16px 24px 2px rgba(0, 0, 0, .14), 0 6px 30px 5px rgba(0, 0, 0, .12), 0 8px 10px -5px rgba(0, 0, 0, .2);
+    }
+
+    .main {
+      background: #FFF;
+      position: relative;
+      z-index: 3;
+    }
+
+    .profile-page .profile {
+      text-align: center;
+    }
+
+    .profile-page .profile img {
+      max-width: 160px;
+      width: 100%;
+      margin: 0 auto;
+      -webkit-transform: translate3d(0, -50%, 0);
+      -moz-transform: translate3d(0, -50%, 0);
+      -o-transform: translate3d(0, -50%, 0);
+      -ms-transform: translate3d(0, -50%, 0);
+      transform: translate3d(0, -50%, 0);
+    }
+
+    .img-raised {
+      box-shadow: 0 5px 15px -8px rgba(0, 0, 0, .24), 0 8px 10px -5px rgba(0, 0, 0, .2);
+    }
+
+    .rounded-circle {
+      border-radius: 50% !important;
+    }
+
+    .img-fluid,
+    .img-thumbnail {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .title {
+      margin-top: 30px;
+      margin-bottom: 25px;
+      min-height: 32px;
+      color: #3C4858;
+      font-weight: 700;
+      font-family: "Roboto Slab", "Times New Roman", serif;
+    }
+
+    .profile-page .description {
+      margin: 1.071rem auto 0;
+      max-width: 600px;
+      color: #999;
+      font-weight: 300;
+    }
+
+    p {
+      font-size: 14px;
+      margin: 0 0 10px;
+    }
+
+    .profile-page .profile-tabs {
+      margin-top: 4.284rem;
+    }
+
+
+    .profile-page .profile .name {
+      margin-top: -80px;
+    }
+
+    img.rounded {
+      border-radius: 6px !important;
+    }
+
+    .tab-content>.active {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="layout-theme animated-css" data-header="sticky" data-header-top="200">
+
+
+
+    <!-- HEADER -->
+    <div class="header">
+      <div class="container">
+        <div class="header-inner">
+          <div class="row">
+          
+            <div class="col-md-8 col-xs-12">
+              <div class="header-block">
+                <span class="header-label">
+                  <i class="icon-header icon-call-in color_primary"></i>
+                  <span class="helper"> Call Us <a href="tel:+918587093204"><strong>+91 8587093204</strong></a></span>
+                </span>
+
+                <span class="header-label">
+                  <i class="icon-header icon-envelope-open color_primary"></i>
+                  <span class="helper"> Email us <a
+                      href="mailto: mailmevjha@gmail.com"><strong>SmartEEG.care@gmail.com</strong></a></span>
+                </span>
+
+              </div>
+              <form class="hidden-md hidden-lg text-center" id="search-global-mobile" method="get">
+                <input type="text" value="" id="search-mobile" name="s">
+                <button type="submit"><i class="icon fa fa-search"></i></button>
+              </form>
+            </div>
+          </div>
+        </div><!-- end header-inner-->
+      </div><!-- end container-->
+
+      <div class="top-nav ">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12  col-xs-12">
+              <div class="navbar yamm ">
+                <div class="navbar-header hidden-md  hidden-lg  hidden-sm ">
+                  <button type="button" data-toggle="collapse" data-target="#navbar-collapse-1"
+                    class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span
+                      class="icon-bar"></span></button>
+                  <a href="#" class="navbar-brand">Menu</a> </div>
+                <div id="navbar-collapse-1" class="navbar-collapse collapse">
+                  <ul class="nav navbar-nav">
+                    <li><a>Smart Encephalo<span style="color: orangered;">Graphy</span></a></li>
+                    <li><a href="">HOME </a> </li>
+                    <li><a href="">CONTACT </a> </li>
+                  </ul>
+                  <form id="search-global-menu" class="hidden-xs hidden-sm" method="get">
+                    <input type="text" value="" id="search" name="s">
+                    <button type="submit"><i class="icon-magnifier"></i></button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--end top-nav -->
+    </div><!-- HEADER END -->
+
+
+    <div class="ui-title-page bg_title bg_transparent">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <h1>Smart EncephaloGraphy</h1>
+            <div class="ui-subtitle-page">Your health comes first!</div>
+          </div>
+        </div>
+      </div>
+    </div><!-- end ui-title-page -->
+
+
+    <div class="border_btm">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <ol class="breadcrumb">
+              <li><a href="javascript:void(0);"><i class="icon icon-home color_primary"></i></a></li>
+              <li class="active">EEG Data</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div><!-- end breadcrumb -->
+
+
+    <main class="main-content">
+      <section class="section">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <div style="text-align: center;">
+                <h1 class="title">User Dash<span style="color: rgb(255, 102, 0);">Board</span></h1>
+                <h4 class="title">You can’t get wealth if You are not in good health!</h4>
+
+              </div>
+              <img
+                src="https://image.shutterstock.com/image-vector/vector-tech-line-wave-technology-260nw-1324484252.jpg"
+                height="300" width="1170" alt="Foto">
+              <hr>
+              <hr>
+              <div class="ui-subtitle-block ui-subtitle-block_form">
+                <i class="fa fa-user" style="font-size:36px;"></i> USER DATA
+              </div>
+              <i class="decor-brand"></i>
+            </div>
+          </div>
+          <!-- Start Of UI Implementation -->
+          <div class="main main-raised">
+            <div class="profile-content" >
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6 ml-auto mr-auto">
+                    <div class="profile">
+                      <div class="name">
+                        <h3 class="title">Name: {{fname}}
+                          {{lname}}</h3>
+                        <h3 class="title">Age: 
+                          {{age}} years</h3>
+                          <h3 class="title">Gender: 
+                            {{gender}}</h3>
+                        <h3 class="title">Email: 
+                          {{email}}</h3>
+                        <h3 class="title">Phone: 
+                          {{phone}}</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <!-- end row -->
+<br>
+<br>
+
+          <div class="container" style="background-color: palegoldenrod;">
+            <div style="padding: 20px;">
+              <h2 class="title"><i class="fa fa-heartbeat"></i> Upload the data file and see the result!</h2>
+            </div>
+          <form class="form-appointment ui-form" method="post" enctype="multipart/form-data" action="/upload">
+            {% csrf_token %}
+            <div class="row">
+              <div class="col-md-10 col-md-offset-1">
+              </div>
+              <div class="col-md-10 col-md-offset-1">
+                <h3>Upload File here!(<span style="font-family: sans-serif; font-weight: 1002; color: brown;">
+                  .csv files
+                </span>)</h3>
+                <div class="input-group">
+                  <input type="file" name="document" style="font-weight: 1000">
+                </div>
+                <button style="margin-bottom: 20px;" class="btn bg-color_primary">SUBMIT</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        </div>
+      </section>
+
+
+    </main><!-- end main-content -->
+
+
+    <footer class="footer" id="contact">
+      <div class="footer__inner">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-sm-4">
+              <section class="footer__section">
+                <h2 class="footer__title">About Smart EncephaloGraphy</h2>
+                <i class="decor-brand decor-brand_footer"></i>
+                <p>A health care startup which aims in making the world disease free. We use machine learning algorithm to help people detect brain related disorders.</p>
+                <div class="separator_10"></div>
+                <address class="footer__contacts"><i class="footer__icon icon-pointer color_primary"></i>Netaji Subhas University of Technology, Delhi</address>
+                <p class="footer__contacts"><i class="footer__icon icon-call-in color_primary"></i>+91 8587093204</p>
+                <a href="javascript:void(0);" class="footer__contacts"><i
+                    class="footer__icon icon-envelope-open color_primary"></i>SmartEEG.care@gmail.com</a>
+                
+              </section>
+            </div>
+
+
+            <div class="col-sm-4">
+              
+              <section class="footer__section">
+                <h2 class="footer__title">Helpful Links</h2>
+                <i class="decor-brand decor-brand_footer"></i>
+                <ul>
+                  <li>How to avoid diseases</li>
+                  <li>Become healthy in 5 steps</li>
+                  <li>Fruits Juices for a Day</li>
+                </ul>
+              </section>
+            </div>
+
+            <section class="footer__section col-sm-4">
+              <h2 class="footer__title">Contact Form</h2>
+              <i class="decor-brand decor-brand_footer"></i>
+              <form class="form" role="form">
+                <div class="form-group">
+                  <input class="form-control" type="text" placeholder="Full Name">
+                  <input class="form-control" type="email" placeholder="Email address">
+                  <textarea class="form-control" rows="4" placeholder="Message"></textarea>
+                  <input class="btn bg-color_primary pull-right" type="submit" value="SEND NOW">
+                </div>
+              </form>
+            </section>
+          </div><!-- end row -->
+        </div><!-- end container -->
+      </div><!-- end footer__inner -->
+    </footer>
+
+
+  </div><!-- end layout-theme -->
+
+  <span class="scroll-top bg-color_second"> <i class="fa fa-angle-up"> </i></span>
+
+
+  <!-- SCRIPTS -->
+  <script type="text/javascript" src="{% static 'plugins/isotope/jquery.isotope.min.js' %}"></script>
+  <script src="{% static 'js/waypoints.min.js' %}"></script>
+  <script src="{% static 'plugins/bxslider/jquery.bxslider.min.js' %}"></script>
+  <script src="{% static 'plugins/prettyphoto/js/jquery.prettyPhoto.js' %}"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+  <script src="{% static 'plugins/datetimepicker/jquery.datetimepicker.js' %}"></script>
+  <script src="{% static 'plugins/jelect/jquery.jelect.js' %}"></script>
+  <script src="{% static 'plugins/nouislider/jquery.nouislider.all.min.js' %}"></script>
+
+
+  <!--THEME-->
+  <script src="{% static 'js/cssua.min.js' %}"></script>
+  <script src="{% static 'js/wow.min.js' %}"></script>
+  <script src="{% static 'js/custom.js' %}"></script>
+</body>
+
+</html>
