@@ -2,11 +2,6 @@
 
 ## Smart EncephaloGraphy
 
-## Team Black Pearl
-Members:
-1. Vishal Jha
-2. Simranjeet Singh
-
 ## Problem Statement
 
 We are aware of the existence of major psychological disorders yet we are still struggling with their diagnosis and cure!
