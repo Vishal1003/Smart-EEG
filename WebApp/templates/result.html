@@ -23,7 +23,7 @@
     <style>
         .card {
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            max-width: 300px;
+            max-width: 600px;
             margin: auto;
             text-align: center;
           }
@@ -42,34 +42,7 @@
 
         <!-- HEADER -->
         <div class="header">
-            <div class="container">
-                <div class="header-inner">
-                    <div class="row">
-
-                        <div class="col-md-8 col-xs-12">
-                            <div class="header-block">
-                                <span class="header-label">
-                                    <i class="icon-header icon-call-in color_primary"></i>
-                                    <span class="helper"> Call Us <a href="tel:+918587093204"><strong>+91
-                                                8587093204</strong></a></span>
-                                </span>
-
-                                <span class="header-label">
-                                    <i class="icon-header icon-envelope-open color_primary"></i>
-                                    <span class="helper"> Email us <a
-                                            href="mailto: mailmevjha@gmail.com"><strong>SmartEEG.care@gmail.com</strong></a></span>
-                                </span>
-
-                            </div>
-                            <form class="hidden-md hidden-lg text-center" id="search-global-mobile" method="get">
-                                <input type="text" value="" id="search-mobile" name="s">
-                                <button type="submit"><i class="icon fa fa-search"></i></button>
-                            </form>
-                        </div>
-                    </div>
-                </div><!-- end header-inner-->
-            </div><!-- end container-->
-
+         
             <div class="top-nav ">
                 <div class="container">
                     <div class="row">
@@ -112,8 +85,9 @@
 
         <div class="card" style="padding: 10px; margin-top: 50px; margin-bottom: 50px" >
             <h1>Report:</h1>
+            <hr>
             <p  style="font-weight: 1000; margin:30px">
-                <!-- Data here -->{{ data }}
+                <!-- Data here --><h2>{{ data }}</h2>
             </p>
             <p style="color: green; font-size: x-large;">Safe: If rate of immotion change is less than 30% </p>
             <p style="color: brown; font-size: x-large;">Danger: If rate of immotion change is greater than 30% </p>
