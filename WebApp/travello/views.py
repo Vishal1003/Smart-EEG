@@ -43,6 +43,6 @@ def upload(request):
         name = fs.save(uploaded_file.name, uploaded_file)
         url = fs.url(name)
         context['url'] = url
-        data = eg.predict(pd.read_csv("/home/sjsingh/Desktop/Smart EEG/WebApp"+url))
+        data = eg.predict(pd.read_csv("/Smart EEG/WebApp"+url))
         print(data)
     return render(request, 'result.html',{'data': data})
