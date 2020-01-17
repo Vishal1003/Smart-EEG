@@ -15,7 +15,7 @@ from sklearn.model_selection import cross_val_score, train_test_split
 import warnings
 warnings.filterwarnings('ignore')
 
-brainwave_df = pd.read_csv('/home/sjsingh/Desktop/Smart EEG/emotions.csv')
+brainwave_df = pd.read_csv('/Smart-EEG/WebApp/emotions.csv')
 label_df = brainwave_df['label']
 brainwave_df.drop('label', axis = 1, inplace=True)
  
@@ -48,5 +48,5 @@ def predict(data):
     return 'Rate of change of emotion is : {}% over {} seconds'.format(int(count*100/predict_df.shape[0]),predict_df.shape[0])
     
 if __name__ == '__main__':
-    predict(pd.read_csv('/home/sjsingh/Desktop/Smart EEG/WebApp/test.csv'))
+    predict(pd.read_csv('/Smart EEG/WebApp/test.csv'))
     
