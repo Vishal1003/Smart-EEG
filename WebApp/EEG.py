@@ -15,7 +15,7 @@ from sklearn.model_selection import cross_val_score, train_test_split
 import warnings
 warnings.filterwarnings('ignore')
 
-brainwave_df = pd.read_csv('/Smart-EEG/WebApp/emotions.csv')
+brainwave_df = pd.read_csv('/home/vishal/Project/Smart-EEG/WebApp/emotions.csv')
 label_df = brainwave_df['label']
 brainwave_df.drop('label', axis = 1, inplace=True)
  

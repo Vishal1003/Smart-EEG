@@ -111,7 +111,7 @@
   </div><!-- end breadcrumb -->
 
 
-  <main class="main-content">
+  <main class="main-content" style="background-color: palegoldenrod;">
     <section class="section">
       <div class="container">
         <div class="row">
@@ -120,38 +120,39 @@
             <div style="font-weight: 20000;" class="ui-subtitle-block ui-subtitle-block_form"><b>Want to know whether you are suffering from brain disorders such as Bipolar disorders?
               Just Register yourself by filling this form and upload the data of the alpha waves recieved through receptors.(for development purpose use test-test.cvs file). And there you go! 
               Please fill-in the form below to see how AI helps to detect whether you have Bipolar Disorder</b></div>
-            <div style="font-weight: 20000;" class="ui-subtitle-block ui-subtitle-block_form"><b>USER <span style="color: orangered;">FORM</span></b></div>
-            <i class="decor-brand"></i>
+            
           </div>
         </div><!-- end row -->
 
-        <form style="background-color: palegoldenrod; padding-top: 50px;" class="form-appointment ui-form" action="/dash">
+        <form style="background-color: palegoldenrod; border: 1px black solid;" class="form-appointment ui-form" action="/dash">
+          <div style="font-weight: 20000; font-size: xx-large;" class="ui-subtitle-block ui-subtitle-block_form"><b>USER <span style="color: orangered;">FORM</span></b></div>
+            <i class="decor-brand"></i>
           {% csrf_token %}
           <div class="row">
             <div class="col-md-5 col-md-offset-1">
               <div class="input-group">
-                <input type="text" style="font-weight: 1000;" name="fname" placeholder="First Name">
+                <input required type="text" style="font-weight: 1000;" name="fname" placeholder="First Name">
               </div>
               <div class="input-group">
-                <input type="email" style="font-weight: 1000;" name="email" placeholder="Email Address">
+                <input required type="email" style="font-weight: 1000;" name="email" placeholder="Email Address">
               </div>
               <div class="input-group">
-                <input class="datetimepicker" type="text" name="dob" style="font-weight: 1000;" placeholder="Date Of Birth">
+                <input required class="datetimepicker" type="text" name="dob" style="font-weight: 1000;" placeholder="Date Of Birth">
                 <i class="icon icon-calendar"></i>
               </div>
               <div class="input-group">
-                <input type="text" style="font-weight: 1000;" name="gender" placeholder="Gender">
+                <input required type="text" style="font-weight: 1000;" name="gender" placeholder="Gender">
               </div>
             </div>
             <div class="col-md-5">
               <div class="input-group">
-                <input style="font-weight: 1000;" type="text" name="lname" placeholder="Last Name">
+                <input required style="font-weight: 1000;" type="text" name="lname" placeholder="Last Name">
               </div>
               <div class="input-group">
-                <input type="text" style="font-weight: 1000;" name="phone" placeholder="Phone #">
+                <input required type="text" style="font-weight: 1000;" name="phone" placeholder="Phone #">
               </div>
               <div class="input-group">
-                <input type="text" style="font-weight: 1000;" name="age" placeholder="Age">
+                <input required type="text" style="font-weight: 1000;" name="age" placeholder="Age">
               </div>
               <button class="btn bg-color_primary">SUBMIT</button>
             </div>
