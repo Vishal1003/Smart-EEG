@@ -1,4 +1,4 @@
-# Smart-EEG
+# 🧠Smart-EEG
 
 ## Smart EncephaloGraphy
 
